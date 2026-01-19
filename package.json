@@ -1,0 +1,15 @@
+{
+    "name": "fastly-ts-api",
+    "private": true,
+    "packageManager": "pnpm@9.12.3",
+    "engines": {
+        "node": ">=20.0.0"
+    },
+    "scripts": {
+        "dev:api": "pnpm --filter @app/api dev",
+        "build:api": "pnpm --filter @app/api build",
+        "start:api": "pnpm --filter @app/api start",
+        "test:api": "pnpm --filter @app/api test",
+        "lint:api": "pnpm --filter @app/api lint"
+    }
+}

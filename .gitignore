@@ -1,0 +1,26 @@
+node_modules
+.env
+
+# build output
+dist
+build
+*.tsbuildinfo
+
+# test/coverage
+coverage
+.nyc_output
+
+# logs
+*.log
+pnpm-debug.log*
+npm-debug.log*
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode
+
+# tool caches
+.turbo
+.eslintcache
+.pnpm-store

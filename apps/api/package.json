@@ -1,0 +1,36 @@
+{
+    "name": "@app/api",
+    "private": true,
+    "type": "module",
+    "main": "dist/index.js",
+    "scripts": {
+        "dev": "tsx watch src/index.ts",
+        "build": "tsc -p tsconfig.json",
+        "start": "node dist/index.js",
+        "lint": "eslint .",
+        "test": "vitest run",
+        "prisma": "prisma"
+    },
+    "dependencies": {
+        "@fastify/jwt": "^9.1.0",
+        "@fastify/rate-limit": "^10.0.0",
+        "@fastify/sensible": "^6.0.0",
+        "@prisma/adapter-pg": "^7.2.0",
+        "@prisma/client": "^7.2.0",
+        "argon2": "^0.44.0",
+        "dotenv": "^17.2.3",
+        "fastify": "^5.0.0",
+        "fastify-plugin": "^5.1.0",
+        "pg": "^8.16.3",
+        "pino": "^9.0.0",
+        "zod": "^3.23.8"
+    },
+    "devDependencies": {
+        "@types/node": "^22.0.0",
+        "eslint": "^9.0.0",
+        "prisma": "^7.2.0",
+        "tsx": "^4.0.0",
+        "typescript": "^5.5.0",
+        "vitest": "^2.0.0"
+    }
+}
