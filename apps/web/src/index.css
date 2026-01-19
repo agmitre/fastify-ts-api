@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import "tailwindcss";
+
+
+@theme {
+  /* =========================
+     BG (surfaces / backgrounds)
+     ========================= */
+  --color-bg: #FBF9FA;
+  --color-bg-dark: #EBE0E4;
+  --color-bg-light: #FBF9FA;
+  --color-bg-fg: #2E2429;
+  --color-bg-invert: #040605;
+
+  /* =========================
+     FG (text / foreground)
+     ========================= */
+  --color-fg: #2E2429;
+  --color-fg-dark: #231A1F;
+  --color-fg-light: #8C7380;
+  --color-fg-muted: var(--color-fg-light);
+  --color-fg-fg: #F8F7F7;
+  --color-fg-invert: #F9F6F7;
+
+  /* =========================
+     PRIMARY
+     ========================= */
+  --color-primary: #39EAAC;
+  --color-primary-dark: #0EAF77;
+  --color-primary-light: #B2F1DB;
+  --color-primary-fg: #2E2429;
+  --color-primary-invert: #D62261;
+
+  /* =========================
+     SECONDARY
+     ========================= */
+  --color-secondary: #E25486;
+  --color-secondary-dark: #B61A51;
+  --color-secondary-light: #F1C5D4;
+  --color-secondary-fg: #F9F6F7;
+  --color-secondary-invert: #2ABD89;
+
+  /* =========================
+     Misc
+     ========================= */
+  --color-border: var(--color-bg-dark);
+  --color-ring: var(--color-secondary);
+}
+
+:root {
+  font-family: "Outfit", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: var(--color-fg);
+  background-color: var(--color-bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+}
